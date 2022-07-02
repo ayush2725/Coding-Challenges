@@ -4,6 +4,9 @@ We Iterate through the whole linked list to get the length. We then start iterat
 We then set that node's next pointer to the next to next node.
 
 To Save ourselves from corner case of deleting the head by creating a dummy node so that the head never becomes None
+
+Time complexity: O(n)
+Space complexity: O(1)
 '''
 
 # Implementation to the Node class
