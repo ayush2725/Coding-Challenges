@@ -1,4 +1,7 @@
 '''
+Question:
+Given the head of a linked list, remove the nth node from the end of the list and return its head.
+
 Logic: 
 We Iterate through the whole linked list to get the length. We then start iterating again from the head to get to the node before the node we want to delete.
 We then set that node's next pointer to the next to next node.
