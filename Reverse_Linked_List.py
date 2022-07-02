@@ -1,6 +1,9 @@
 '''
 Author: Ayush Singh
 
+Question:
+Given the head of a singly linked list, reverse the list, and return the reversed list.
+
 Logic:
 We'll be maintaining 3 pointers: previous, current, and future. We will continously set the next of current to previous and we'll be keeping
 the future so that the next node is not lost.
