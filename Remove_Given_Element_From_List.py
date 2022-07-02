@@ -1,6 +1,9 @@
 '''
 Author: Ayush Singh
 
+Question:
+Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
+
 Logic: 
 We'll be having two pointers, a fast pointer and a slow pointer. For simplicity, we've made a dummy node which points to head so that we never have head
 as None. Slow pointer will start from dummy node and the fast pointer will start from head. If the value at fast pointer is equal to the value we
