@@ -1,4 +1,6 @@
 '''
+Author: Ayush Singh
+
 Logic: 
 We'll be having two pointers, a fast pointer and a slow pointer. For simplicity, we've made a dummy node which points to head so that we never have head
 as None. Slow pointer will start from dummy node and the fast pointer will start from head. If the value at fast pointer is equal to the value we
