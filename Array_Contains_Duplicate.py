@@ -26,5 +26,5 @@ class Solution(object):
                 return True
             set_of_nums.add(i)
             
-        # Case when no duplicates were
+        # Case when no duplicates were found
         return False
