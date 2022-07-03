@@ -45,7 +45,7 @@ class Solution(object):
                 slow = fast
                 fast = fast.next
         
-        # Case when there are duplicates at the
+        # Case when there are duplicates at the end
         slow.next = fast
         
         return head
