@@ -18,7 +18,7 @@ Space Complexity: O(1)
 class Solution(object):
     def removeDuplicates(self, nums):
         
-        # Two pointers
+        # Two pointers, slow and fast 
         slow = 0
         fast = 1
         
