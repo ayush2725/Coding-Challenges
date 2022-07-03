@@ -73,6 +73,7 @@ class Solution(object):
         
         left.next = prev
         
+        # Slow and fast pointers from head and mid
         slow = head
         fast = left.next
         
