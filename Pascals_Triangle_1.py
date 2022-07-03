@@ -31,6 +31,7 @@ class Solution(object):
             
             lst = []
             
+            # Calculating individual rows
             for j in range(i + 1):
                 
                 lst.append(self.nCr(i, j))
