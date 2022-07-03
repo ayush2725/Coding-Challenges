@@ -15,19 +15,22 @@ Time Complexity: O(n)
 Space Complexity: O(1)
 '''
 
-# 
+# Implementation to the Node class
 class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
-        
+      
+# Implementation to the Solution class
 class Solution(object):
     def reverseBetween(self, head, left, right):
         
+        # The dummy node
         dummy_node = ListNode(next = head)
         
         left_node = dummy_node
         
+        # Reaching the node just before the node to start reversing from
         for i in range (left - 1):
             
             left_node = left_node.next
@@ -35,6 +38,7 @@ class Solution(object):
         prev_node = None
         curr_node = left_node.next
         
+        # Reversing the nodes to be reversed
         for i in range (right - left + 1):
             
             future_node = curr_node.next
@@ -45,8 +49,10 @@ class Solution(object):
             
             curr_node = future_node
         
+        # Adjusting the pointers
         left_node.next.next = curr_node
         
         left_node.next = prev_node
         
+        # Returning the head
         return dummy_node.next
