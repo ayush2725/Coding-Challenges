@@ -39,5 +39,5 @@ class Solution(object):
         left_sub_tree = self.helper(Node.left, min_val, Node.val)
         right_sub_tree = self.helper(Node.right, Node.val, max_val)
         
-        return left_sub_tree and right_sub_tre
+        return left_sub_tree and right_sub_tree
         
