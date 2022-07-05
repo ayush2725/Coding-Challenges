@@ -38,4 +38,4 @@ class Solution(object):
             else:
                 curr_node = curr_node.right
         
-        return 
+        return None
