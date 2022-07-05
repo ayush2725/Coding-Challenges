@@ -36,5 +36,4 @@ class Solution(object):
             
             lst.append(Node.val)
             
-            self.helper(Node.right, lst
-        
+            self.helper(Node.right, lst)
