@@ -52,4 +52,4 @@ class Solution(object):
                     else:
                         curr_node = curr_node.left
                 
-        return
+        return root
