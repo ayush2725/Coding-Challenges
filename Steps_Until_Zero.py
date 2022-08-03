@@ -2,13 +2,33 @@
 Author: Ayush Singh
 
 Question:
-Given an integer array nums of size n, return the number with the value closest to 0 in nums. If there are multiple answers, 
-return the number with the largest value.
+You are given two non-negative integers num1 and num2. In one operation, if num1 >= num2, you must subtract num2 from num1, otherwise 
+subtract num1 from num2. Return the number of operations required to make either num1 = 0 or num2 = 0.
 
 Logic:
-Starting from the 0th index of the array, we'll iterate through all the elements in the array and will see whose abs() value is closest to
-zero. We'll also keep a condition to make sure if there are duplicates, we return only the positive part.
+Using a while loop, the condition would be for both the numbers to be positive, inside the loop, we'll see if either of the numbers is 
+zero, if it is, we break out of the loop, else, we substract the numbers.
 
 Time Complexity: O(n)
 Space Complexity: o(1)
 '''
+
+class Solution(object):
+    def countOperations(self, num1, num2):
+        
+        no_of_steps = 0
+        
+        while num1 > 0 and num2 > 0:
+            
+            if num1 == 0 or num2 == 0:
+                break
+            
+            elif num1 > num2:
+                num1 = num1 - num2
+                no_of_steps += 1
+            
+            else:
+                num2 = num2 - num1
+                no_of_steps += 1
+        
+        return no_of_steps
